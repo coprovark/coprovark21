@@ -31,4 +31,12 @@ class PageController extends Controller
 
         return view('page.page1',$array);
     }
+    
+    public function show_select(Request $res){
+        return view('page.page12',$res);
+    }
+    
+        public function show_password(Request $rep){
+            return view('page.page11',$rep);
+    }
 }

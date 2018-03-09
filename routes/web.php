@@ -41,3 +41,16 @@ Route::get('/page10/{id}', function ($id) {
     ];
     return view('page.page10',$array);
 });
+
+Route::post('/page12','PageController@show_select');
+Route::post('/page11','PageController@show_password');
+
+
+Route::get('/form', function () {
+    return view('page.form');
+});
+
+
+Route::get('/login', function () {
+    return view('page.login');
+});
