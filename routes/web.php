@@ -54,3 +54,12 @@ Route::get('/form', function () {
 Route::get('/login', function () {
     return view('page.login');
 });
+
+
+ Route::post('/form_check_login','PageController@form_check_login');
+ Route::get('/form_check_login',function () {
+    $array01 = [
+        "users" => [],
+    ];
+    return view('page.form_check_login',$array01);
+});

@@ -91,7 +91,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Blank</h1>
+                        <h1 class="page-header">สมัครสมาชิก</h1>
 
                         
 

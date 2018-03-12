@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Page;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use Illuminate\Support\Facades\DB;
 class PageController extends Controller
 {
     
@@ -38,5 +38,15 @@ class PageController extends Controller
     
         public function show_password(Request $rep){
             return view('page.page11',$rep);
+
+           
     }
+
+    public function form_check_login(request $res){
+        $users = DB::select('select * from coprovark where username = ? and password = ?', 
+        [$res['username'],$res['password']]
+        );
+        return view('page.form_check_login',['users'=>$users]);
+    }
+
 }
