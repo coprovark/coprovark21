@@ -17,4 +17,7 @@
   <button type="submit" class="btn btn-default">login</button>
   </center>
 </form>
+@foreach ($users as $user) :
+   {{ $user->username }}
+@endforeach
 @endsection

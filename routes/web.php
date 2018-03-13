@@ -58,8 +58,11 @@ Route::get('/login', function () {
 
  Route::post('/form_check_login','PageController@form_check_login');
  Route::get('/form_check_login',function () {
-    $array01 = [
+    $data = [
         "users" => [],
     ];
     return view('page.form_check_login',$array01);
 });
+
+
+Route::get('/list_users','UsersController@list_users');
