@@ -11,23 +11,21 @@
 <!-- @foreach($data_list as $obj)
     <p>{{ $obj->id }}</p>
     @endforeach -->
-<form class="form-inline">
+<form class="form-inline" action="/list_users_find" method="post">
     <div class="form-group">
         <div class="input-group">
             <span class="input-group-btn">
-            <a href="#">
+            <a href="/registerlogin">
                     <button class="btn btn-light" type="button">
                         <i class="glyphicon glyphicon-plus"></i> Add
                     </button>
             </a>   
             </span>
-            <input type="text" class="form-control" placeholder="Information">  
+            <input type="text" class="form-control" placeholder="Information" name ="find" value="{{ $find }}" >  
                 <span class="input-group-btn">
-                <a href="#">
-                    <button class="btn btn-primary" type="button">
+                    <button class="btn btn-primary" type="submit">
                         <i class="fa fa-search"></i> Search
                     </button>
-                </a>
                 </span>
             
         </div>
@@ -50,19 +48,11 @@
         <td>{{ $obj->password }}</td>
         <td>{{ $obj->status }}</td>
         <td>
-        <!-- <div class="btn-group">
-                <button type="button" class="btn btn-danger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Dropdown <i class="glyphicon glyphicon-chevron-down"></i>
+        <button class="btn btn-danger btn-xs" onclick="return _confirm('{{ $obj->id }}')">
+                    <span class="glyphicon glyphicon-remove"></span>  
+                     ลบรายการ
                 </button>
-                
-                <div class="dropdown-menu">
-                <br>
-                <div><a class="dropdown-item" href="#"><P Align=center><i class="glyphicon glyphicon-pencil"></i> Edit</p></a></div>
-                <hr>
-                <div><a class="dropdown-item" href="#"><P Align=center><i class="glyphicon glyphicon-erase"></i> Delete</p></a></div>
-            </div>
-        </div> -->
-            <div class="dropdown">
+            <!-- <div class="dropdown">
                 <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     Dropdown
                     <span class="caret"></span>
@@ -70,12 +60,21 @@
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <a href="#"><h4><p><ul class="glyphicon glyphicon-pencil"> Edit</ul></p></h4></a>
                         <hr>
+
                         <a href="#"><h4><p><ul class="glyphicon glyphicon-trash"> Delete</ul></p></h4></a>
+                        
                     </ul>
-            </div>
+            </div> -->
         </td>
     </tr>
     @endforeach
 </table>
-
+<script>
+    function _confirm(id){
+        if(confirm('ยืนยันการลบข้อมูล')){
+            window.location.href = '/delete_user/'+id;
+                                    //'/delete_user/15';
+        }
+    }
+</script>
 @endsection

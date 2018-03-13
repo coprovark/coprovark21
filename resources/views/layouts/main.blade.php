@@ -73,13 +73,17 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="/form"><i class="fa fa-table fa-fw"></i> เข้าสู่ระบบ</a>
+                            <a href="page3"><i class="fa fa-table fa-fw"></i> เข้าสู่ระบบ</a>
                         </li>
                         <li>
-                            <a href="/login"><i class="fa fa-jcob fa-fw"></i> สมัครสมาชิก</a>
+                            <a href="/registerlogin"><i class="fa fa-jcob fa-fw"></i> สมัครสมาชิก</a>
                             <ul class="nav nav-second-level">
                         </li>
                     </ul>
+                    <li>
+                            <a href="/list_users"><i class="fa fa-jcob fa-fw"></i> listuser</a>
+                            <ul class="nav nav-second-level">
+                        </li>
                 </div>
                 <!-- /.sidebar-collapse -->
             </div>
