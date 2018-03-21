@@ -71,10 +71,9 @@
 </table>
 <script>
     function _confirm(id){
-        if(confirm('ยืนยันการลบข้อมูล')){
+        if(confirm('ลบ')){
             window.location.href = '/delete_user/'+id;
-                                    //'/delete_user/15';
-        }
+                                  
     }
 </script>
 @endsection
