@@ -83,3 +83,6 @@ Route::get('/delete_user/{id}','UsersController@delete_users');
  Route::get('/form2', function () {
     return view('page.form2');
 });
+Route::get('/pageuser', function () {
+    return view('page.pageuser');
+});

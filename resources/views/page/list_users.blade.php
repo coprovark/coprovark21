@@ -52,7 +52,7 @@
                     <span class="glyphicon glyphicon-remove"></span>  
                      ลบรายการ
                 </button>
-            <!-- <div class="dropdown">
+            <div class="dropdown">
                 <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     Dropdown
                     <span class="caret"></span>
@@ -64,7 +64,7 @@
                         <a href="#"><h4><p><ul class="glyphicon glyphicon-trash"> Delete</ul></p></h4></a>
                         
                     </ul>
-            </div> -->
+            </div>
         </td>
     </tr>
     @endforeach
