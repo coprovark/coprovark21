@@ -4,8 +4,6 @@
 
 @section('content')
 
-<h1>List user</h1>
-
 <hr>
 
 <!-- @foreach($data_list as $obj)
@@ -72,8 +70,10 @@
 <script>
     function _confirm(id){
         if(confirm('ลบ')){
-            window.location.href = '/delete_user/'+id;
+            window.location.href = '/delete_users/'+id;
                                   
     }
 </script>
+<a href="/list_user_edit/{{ $item->id }}" class="btn btn-info">แก้ไข</a>
+
 @endsection

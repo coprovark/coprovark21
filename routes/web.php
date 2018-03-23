@@ -86,3 +86,12 @@ Route::get('/delete_user/{id}','UsersController@delete_users');
 Route::get('/pageuser', function () {
     return view('page.pageuser');
 });
+Route::get('/list_users1', function () {
+    return view('page.list_users1');
+});
+Route::get('/list_users', function () {
+    return view('page.list_users');
+});
+Route::post('/list_user_update','UsersController@list_user_update');
+Route::post('/list_user_update','UsersController@list_user_update');
+

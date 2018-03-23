@@ -70,8 +70,76 @@ class UsersController extends Controller
            return "เกิดข้อผิดพลาด";
         }
        
-    //    return $req;
-    
+    //    return $req;public function list_users()
+  {
+    $find='';
+    $users = DB::table('coprovark')->select('*')->get();
+    return view('page.list_users',[
+        'data_list'=>$users,
+        'find'     =>$find
+    ]);
+}
+//แก้ไข user
+// public function list_user_edit(Request $req){
+//     $find = $req->id;
+//     $user = DB::table('users')
+//                      ->select('*')
+//                      ->where('id','=',$find)
+//                      ->get();
+//     return view('page.list_user_edit',[
+//             'user'=>$user
+//     ]);
 
+ <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{{ URL::asset('asset/css/bootstrap/css/bootstrap.min.css') }}">
+
+    <!-- MetisMenu CSS -->
+    <link rel="stylesheet" href="{{ URL::asset('asset/css/metisMenu/metisMenu.min.css') }}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ URL::asset('asset/css/sb-admin-2.css') }}">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{{ URL::asset('asset/css/font-awesome/css/font-awesome.min.css') }}">
+
+
+
+//============================= Route web.php=====================
+Route::post('/list_user_update','UsersController@list_user_update');
+
+
+
+//===================Controller  UserControllers.php====================
+    //อัพเดทข้อมูล user
+    public function list_user_update(Request $req){
+        $user_code      = $req->user_code;
+        $user_name      = $req->user_name;
+        $user_password  = $req->user_password;
+        $data = [
+            'username'=>$user_name,
+            'password'=>$user_password,
+        ];
+        $status = DB::table('users')
+                    ->where('id', $user_code)
+                    ->update($data);
+        return redirect('list_users');
     }
+
+
+   //อัพเดทข้อมูล user
+   public function list_user_update(Request $req){
+    $user_code      = $req->user_code;
+    $user_name      = $req->user_name;
+    $user_password  = $req->user_password;
+    $data = [
+        'username'=>$user_name,
+        'password'=>$user_password,
+    ];
+    $status = DB::table('users')
+                ->where('id', $user_code)
+                ->update($data);
+    return redirect('list_users');
+}
+
+}
 } 

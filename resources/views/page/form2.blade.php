@@ -45,19 +45,24 @@
                        
                         <div class="form-group">
                               <label >เพศ</label>
+                              <br>
+                              <P>
                                 <input type="radio" name="gender" value="1"><font size="" color="">ชาย</font>
                                 <input type="radio" name="gender" value="2"><font size="" color="">หญิง</font>
                                 <input type="radio" name="gender" value="3"><font size="" color="">ทอม</font>
                                  <input type="radio" name="gender" value="3"><font size="" color="">กระเทย</font>
+                                 </p>
+                                 </br>
                             </div>
                         
                        
                        <div class="row">
                             <div class="col-md-3">
+                            <label>อายุ</label>
                                 <div class="form-group">
                                         <label>วัน เดือน ปีเกิด</label>
                                         <input type="date" class="form-control" name="birthday" placeholder=""><br>
-                                        <label>อายุ</label>
+                                        
                                     </div>
                                 </div>
                             </div>

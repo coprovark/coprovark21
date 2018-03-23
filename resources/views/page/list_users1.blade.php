@@ -4,7 +4,7 @@
  
  @section('content')
  
- <h1>List user</h1>
+ <!-- <h1>List user</h1>
  
  <hr>
  
@@ -61,10 +61,11 @@
                       ลบรายการ
                  </button>
          
-                 <button class="btn btn-warning btn-xs">
-                     <span class="glyphicon glyphicon-pencil"></span>  
+                 <button type="button" class="btn btn-danger" onclick="return _confirm('{{ $obj->id }}')">
+                 a href=
+                                      <span class="glyphicon glyphicon-pencil"></span>  
                       แก้ไขข้อมูล
-                               </button>
+                 </button>
           
          </td>
      </tr>
@@ -76,6 +77,6 @@
              window.location.href = '/delete_user/'+id;
                                  
      }
- </script>
+ </script> -->
  
  @endsection
