@@ -95,3 +95,12 @@ Route::get('/list_users', function () {
 Route::post('/list_user_update','UsersController@list_user_update');
 Route::post('/list_user_update','UsersController@list_user_update');
 
+
+Route::get('/formtitle', function () {
+    return view('page.formtitle');
+});
+
+
+Route::get('/new1_main', function () {
+    return view('page.new1_main');
+});

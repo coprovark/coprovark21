@@ -17,9 +17,9 @@
                                     <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> เพศหญิง
                                   </label>
                                   
-                              </div>
-                              <div class="radio">
-                              </div>
+                              </div>div class="radio">
+                              </di
+                              <v>
                             <div class="form-group">
                               <label for="exampleInputPhonenumber">Phonenumber</label>
                               <input type="phonenumber" class="form-control" id="exampleInputPhonenumber" placeholder="08x-xxxxxxx">
