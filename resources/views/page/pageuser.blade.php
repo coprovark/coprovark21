@@ -3,11 +3,7 @@
 @section('title', 'Page Title')
 
 @section('content')
-@extends('layouts.main')
- 
- @section('title', 'Page Title')
- 
- @section('content')
+
  <form action="/form_register_save" method="post">
                                         
 

@@ -52,22 +52,22 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="/form"><i class="fa fa-dashboard fa-fw"></i> สมัครสมาชิกตัวอย่าง</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                            <a href="/page3"><i class="fa fa-bar-chart-o fa-fw"></i> กรอกชื่อ<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Flot Charts</a>
+                                    <a href="/formtitle">สมัครcoprovack</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Morris.js Charts</a>
+                                    <a href="/pageuser">ใบสมัครงาน</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="page3"><i class="fa fa-table fa-fw"></i> เข้าสู่ระบบ</a>
+                            <a href="/form2"><i class="fa fa-table fa-fw"></i>ใบสมัคร</a>
                         </li>
                         <li>
                             <a href="/registerlogin"><i class="fa fa-jcob fa-fw"></i> สมัครสมาชิก</a>
@@ -89,8 +89,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">สมัครสมาชิก</h1>
-
+                        
                         
 
                         @yield('content')

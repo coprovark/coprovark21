@@ -5,7 +5,7 @@
     <h3><img src="/icon/notes.png"> กำหนดข้อมูลผู้ใช้งาน</h3>
 </div>
 <br>
-<form action="/save_std" medthod="get">
+<form action="/save_std" medthod="post">
     <!-- รหัสนักศึกษา -->
     <div class="form-group form-inline">
         <label class="col-sm-3">user_code</label>
