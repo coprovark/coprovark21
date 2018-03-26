@@ -5,7 +5,7 @@
  @section('content')
  <form action="/form_register_save" method="post">
                                        
-
+ <!-- สมัครสมาชิก -->
                          <div class="row">
                              <div class="col-md-4">
                                  <div class="form-group">

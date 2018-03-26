@@ -9,28 +9,29 @@ use Illuminate\Support\Facades\DB;
 class UsersController extends Controller
 {
 
-  public function list_users()
-  {
-      $find='';
-      $users = DB::table('coprovark_21')->select('*')->get();
-      return view('page.list_users',[
-          'data_list'=>$users,
-          'find'     =>$find
-      ]);
-  }
+    public function list_users()
+    {
+        $find='';
+        $users = DB::table('coprovark_21')->select('*')->get();
+        return view('page.list_users',[
+            'data_list'=>$users,
+            'find'     =>$find
+        ]);
+        //print_r($users);
+    }
 
   public function list_users_find(Request $req)
-  {
-      $find=$req->find;
-      $users = DB::table('coprovark_21')
-                          ->select('*')
-                          ->where('id','=',$find)
-                          ->get();
-      return view('page.list_users',[
-          'data_list'=>$users,
-          'find'     =>$find
-      ]);
-  }
+    {
+        $find=$req->find;
+        $users = DB::table('coprovark_21')
+                            ->select('*')
+                            ->where('sid','=',$find)
+                            ->get();
+        return view('page.list_users',[
+            'data_list'=>$users,
+            'find'     =>$find
+        ]);
+    }
     
   
 
@@ -73,7 +74,7 @@ class UsersController extends Controller
     //    return $req;public function list_users()
   {
     $find='';
-    $users = DB::table('coprovark')->select('*')->get();
+    $users = DB::table('coprovark_21')->select('*')->get();
     return view('page.list_users',[
         'data_list'=>$users,
         'find'     =>$find
@@ -104,8 +105,7 @@ class UsersController extends Controller
 
 
 
-// //============================= Route web.php=====================
-// Route::post('/list_user_update','UsersController@list_user_update');
+
 
 
 

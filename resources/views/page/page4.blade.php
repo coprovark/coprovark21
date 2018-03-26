@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
 @section('title', 'Page Title')
+<!-- post -->
 
 @section('content')
 <form action="/page12" method="POST">

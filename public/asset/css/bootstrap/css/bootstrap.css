@@ -6755,13 +6755,4 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-<link rel="stylesheet" href="{{ URL::asset('asset/css/bootstrap/css/bootstrap.min.css') }}">
 
-<!-- MetisMenu CSS -->
-<link rel="stylesheet" href="{{ URL::asset('asset/css/metisMenu/metisMenu.min.css') }}">
-
-<!-- Custom CSS -->
-<link rel="stylesheet" href="{{ URL::asset('asset/css/sb-admin-2.css') }}">
-
-<!-- Custom Fonts -->
-<link rel="stylesheet" href="{{ URL::asset('asset/css/font-awesome/css/font-awesome.min.css') }}">

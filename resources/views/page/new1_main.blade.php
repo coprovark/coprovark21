@@ -72,13 +72,13 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+      <p><a href="formtitle">หน้าแรก</a></p>
+      <p><a href="#">เข้าสู่ระบบ</a></p>
+      <p><a href="#">ผู้ใช้งาน</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
       <h1>Welcome</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>มาการง (ฝรั่งเศส: macaron, ออกเสียง: [makaˈʁɔ̃])[1] เป็นขนมหวานที่ได้จากการผสมเมอแร็งก์กับไข่ขาว, น้ำตาลไอซิ่ง, น้ำตาลทรายขาว, ผงแอลมอนด์หรือแอลมอนด์ป่น และสีผสมอาหาร มาการงรูปร่างเหมือนแซนด์วิช เป็นขนมปังสองชิ้นประกบกัน มีสอดไส้ตรงกลาง ส่วนไส้มักจะเป็นกานัช, บัตเตอร์ครีม (ครีมเนยที่ใช้แต่งหน้าเค้ก) หรือแยม คำว่า มาการง แผลงมาจากคำในภาษาอิตาลีว่า macarone, maccarone หรือ maccherone, เมอแร็งก์แบบอิตาลี</p>
       <hr>
       <h3>Test</h3>
       <p>Lorem ipsum...</p>

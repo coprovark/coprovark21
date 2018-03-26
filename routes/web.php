@@ -65,6 +65,7 @@
 
 
  Route::get('/list_users','UsersController@list_users');
+ 
 
 
  Route::get('delete_user/{id}', function ($id) {
@@ -74,10 +75,17 @@ Route::get('/delete_user/{id}','UsersController@delete_users');
 
  Route::post('/form_register_save','UsersController@form_register_save');
 
+
+
  Route::get('/registerlogin', function () {
      return view('page.registerlogin');
+
  });
- Route::post('/list_users_find','UsersController@list_users_find');
+
+//  Route::get('/list_users', function () {
+//     return view('page.list_users');
+// });
+//  Route::post('/list_users_find','UsersController@list_users_find');
 
 
  Route::get('/form2', function () {
@@ -89,10 +97,7 @@ Route::get('/pageuser', function () {
 Route::get('/list_users1', function () {
     return view('page.list_users1');
 });
-Route::get('/list_users', function () {
-    return view('page.list_users');
-});
-Route::post('/list_user_update','UsersController@list_user_update');
+
 Route::post('/list_user_update','UsersController@list_user_update');
 
 
@@ -100,7 +105,15 @@ Route::get('/formtitle', function () {
     return view('page.formtitle');
 });
 
+Route::get('/formtitle2', function () {
+    return view('page.formtitle2');
+});
+
 
 Route::get('/new1_main', function () {
     return view('page.new1_main');
+});
+
+Route::get('/list_user_edit', function () {
+    return view('page.list_user_edit');
 });

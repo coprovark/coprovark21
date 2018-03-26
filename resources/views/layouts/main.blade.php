@@ -10,20 +10,14 @@
     <meta name="author" content="">
 
     <title>webapp</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="css/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="{{ URL::asset('asset/css/bootstrap/css/bootstrap.min.css') }}">
+        <!-- MetisMenu CSS -->
+        <link rel="stylesheet" href="{{ URL::asset('asset/css/metisMenu/metisMenu.min.css') }}">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{{ URL::asset('asset/css/sb-admin-2.css') }}">
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="{{ URL::asset('asset/css/font-awesome/css/font-awesome.min.css') }}">
 </head>
 
 <body>

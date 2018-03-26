@@ -6,3 +6,5 @@
 @section('content')
 <a href="/page10/1001">ส่งค่า1001</a>
 @endsection
+
+// ส่งค่า
