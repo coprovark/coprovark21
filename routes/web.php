@@ -117,3 +117,16 @@ Route::get('/new1_main', function () {
 Route::get('/list_user_edit', function () {
     return view('page.list_user_edit');
 });
+
+// Route::get('/upload1', function () {
+//     return view('file.upload');
+//   });
+
+// Route::post('/upload1','FileController@upload1');
+Route::get('/upload1','FileController@show');
+Route::post('/upload1','FileController@upload');
+
+Route::get('/dl/{path}','FileController@dl');
+
+Route::get('/rm/{ID}','FileController@rm');
+Route::get('/dl/{path}/{name}','FileController@dl');

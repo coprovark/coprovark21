@@ -77,7 +77,11 @@
                     <li>
                             <a href="/list_users"><i class="fa fa-jcob fa-fw"></i> listuser</a>
                             <ul class="nav nav-second-level">
-                        </li>
+                        </li> </ul>
+                    <li>
+                            <a href="/upload"><i class="fa fa-jcob fa-fw"></i> UPLOAD</a>
+                            <ul class="nav nav-second-level">
+                        </li> </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
             </div>
