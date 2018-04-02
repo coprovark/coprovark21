@@ -122,11 +122,15 @@ Route::get('/list_user_edit', function () {
 //     return view('file.upload');
 //   });
 
-// Route::post('/upload1','FileController@upload1');
+//**************************************upload********************************************* */
+// Route::get('/upload1', function () {
+//     return view('file.upload');
+// });
+// Route::post('/uploader','FileController@uploader');
 Route::get('/upload1','FileController@show');
-Route::post('/upload1','FileController@upload');
-
-Route::get('/dl/{path}','FileController@dl');
-
-Route::get('/rm/{ID}','FileController@rm');
+Route::post('/upload1','FileController@upload1');
 Route::get('/dl/{path}/{name}','FileController@dl');
+Route::get('/rm/{ID}','FileController@rm');
+Route::get('/ed/{ID}','FileController@ed');
+Route::post('/update1','FileController@update1');//edit
+Route::post('api/delete','FileController@deleteItem');//CheckAll delete
